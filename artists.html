@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+  <title>Bloomusic</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/artists.css">
+
+
+<!--font-->
+
+<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+<!--[if lt IE 9]>
+<script 
+	src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"><script>
+<![endif]-->
+<!--[if lt IE 9]>
+	src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"><script>
+<![endif]-->
+
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+
+//<![CDATA[
+$(function(){
+	$(".menubtn a").on("click",function(){
+       $("#menu").animate({marginLeft:"700px"},600);	
+	   $("#black_back").css("opacity","0.6").css("display","block");
+	   return false; 
+	});
+
+	$("#menu, #black_back").on("click",function(){
+       $("#menu").animate({marginLeft:"-800px"},600);
+	   $("#black_back").css("opacity","0.7").css("display","none");
+	});
+
+});
+
+
+
+
+//]]>
+</script>
+
+
+ </head>
+ <body>
+<!--menu-->
+<div id="header">
+<div class="menubtn">
+	<a href="#menu" class="menubtn"><img src="images/menubtn.png" alt="menubtn" /></a>
+</div><!--menubtn e-->
+
+	<nav id="menu">
+		<ul class="menu01">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="new.html">News</a></li>
+			<li><a href="release.html">Release</a></li>
+			<li><a href="Artists.html"  style="color:gold">Artists<b style="font:bold 15px '맑은 고딕'; color:gold">●</b></a></li>
+			<li><a href="#">Events</a></li>
+		</ul>
+
+		<ul class="menu02">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Gallery</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+				<p  style="cursor:pointer" id="close"><img src="images/menubtnX.png" alt="" /></p>
+	</nav>
+		
+	<div id="black_back">
+	</div>
+</div><!--/header-->
+
+<div id="content">	
+
+	<h1 class="title1"><a href="#">With'</a></h1> 
+	<h1 class="title2"><a href="#">BlooMusic</a></h1>
+
+	<h1 class="title3">Extraordinary - Clean Bandit</h1>
+	<h2 class="title4">New arrival <a href="#">Read more ></a></h2>
+
+</div>	
+
+<video id="my-video" class="video" muted loop autoplay>
+		<source src="video/cb02.mp4" type="video/mp4" > 
+</video>
+
+
+
+
+<div id="contents">
+
+	<div id="txtbox1">
+		<div class="txtbox_inner">	
+		<h1>Music of <span>Bloomusic</span> embodies each artists' lifestyle. We discover the<br> 
+				value of music with different artists and their lifestyle.
+		</h1>
+		<h3><span>블루뮤직<span> 음악에는 아티스트들의 라이프스타일이 담겨있습니다. 
+			 <br>그들의 각기 다른 모습을 통해 블루뮤직 음악의 가치를 발견합니다.
+		</h3>
+		<p class="midlemenu">
+		All News By <span style="cursor:pointer" >Everything▼</span>
+		</p>
+		</div><!--txtbox_inne e-->
+	</div><!--txtbox1 e-->
+
+	<div id="contents2">
+	 <div id="Contents2_inner"></div>
+		<ul class="prod_list">
+			<li><a href="#">
+			<img src="images/contradius_1.png" alt="menu01"/>
+		
+			<h2  class="cap1">A</h2>		
+			<div class="caption2">
+			<h1>Alan Walker</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+
+			<li><a href="#">
+			<img src="images/contradius_2.png" alt="menu01"/>
+		
+			<h2  class="cap1">H</h2>		
+			<div class="caption2">
+			<h1>Honne</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+
+
+			<li><a href="#">
+			<img src="images/contradius_3.png" alt="menu01"/>
+		
+			<h2  class="cap1 cap11">M</h2>		
+			<div class="caption2 cap12">
+			<h1>Max Elto</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+
+
+
+			<li><a href="#">
+			<img src="images/contradius_4.png" alt="menu01"/>
+		
+			<h2  class="cap1">L</h2>		
+			<div class="caption2 cap12" >
+			<h1>LAUV</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+		</ul>
+
+
+
+		<ul class="prod_list">
+			<li><a href="#">
+			<img src="images/contradius_5.png" alt="menu01"/>
+		
+			<h2  class="cap1">C</h2>		
+			<div class="caption2 cap12">
+			<h1>Calvin Harris</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+
+			<li><a href="#">
+			<img src="images/contradius_6.png" alt="menu01"/>
+		
+			<h2  class="cap1">C</h2>		
+			<div class="caption2 cap12">
+			<h1>Clean Bandit</h1>
+			<p>#Artist</p>
+			</div>
+			</a>
+			</li>
+
+
+		</ul>
+
+		</div><!--Contents2_inner e-->
+			<div id="bottom_btn">
+				<h2><a href="#">Back To The Top ▲</a></h3>
+				<h3><a href="">Show Me More Bloomusic▼</a></h3>
+			</div>
+			
+</div><!--content e-->
+
+<div id="footer">
+	<div class="inner_footer">
+		<h2>I'm as proud of what we don't do as<br>
+		I am of what we do.</h2>
+		<p class="point">●</p>
+		<p class="footer_txt1">© Bloomusic 2017 All rights reserved · <a href="#">Site by · Kim Yong Sang</a></p>
+		<p class="mg">26, Dosan-daero 37-gil,<br/> Gangnam-gu, Seoul, Korea, 06024</p><a href="#">
+		<img src="images/mapbtn.png" alt="mapbtn" id="mapbtn" onmouseover="this.src='images/mapbtn2.png'"
+		onmouseout="this.src='images/mapbtn.png'"/></a>
+		<a href="#"><p class="email">Bloomusic@bloomkor.com</p></a>
+		<p class="sns">Follow Bloomusic</p>
+
+			<ul class="snsbtn">
+					<li>
+						<a href="#">
+							<img src="images/follow1.png" onmouseover="this.src='images/follow1-2.png'" 
+							onmouseout="this.src='images/follow1.png'" alt="menu01" />
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="images/follow2.png" onmouseover="this.src='images/follow2-1.png'" 
+							onmouseout="this.src='images/follow2.png'" alt="menu01" />
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="images/follow3.png" onmouseover="this.src='images/follow3-1.png'" 
+							onmouseout="this.src='images/follow3.png'" alt="menu01" />
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<img src="images/follow4.png" onmouseover="this.src='images/follow4-1.png'" 
+							onmouseout="this.src='images/follow4.png'" alt="menu01" />
+						</a>
+					</li>
+			</ul><!-- snsbtn -->
+	</div>
+</div>
+	</div>
+
+
+ </body>
+</html>

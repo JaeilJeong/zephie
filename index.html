@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>index</title>
+		
+		<style>
+			* { margin: 0; padding: 0; }
+			li { list-style: none; }
+			button { padding: 20px; }
+			
+			#wrapper { padding: 20px; }
+			.banner{margin:0 auto; width:500px; height:180px; position:relative;}
+			.banner .list_con { width: 300px; height: 180px; overflow: hidden;position:relative;  margin:0 auto; }
+			.banner .list_con ul { width:1500px; position:absolute; left:0; top:0;}
+			.banner .list_con ul li { float:left; width:300px; height:180px;}
+			.banner	.btn_prev{position:absolute; left:0; top:50%; margin-top:-30px;}
+			.banner	.btn_next{position:absolute; right:0; top:50%; margin-top:-30px;}
+		</style>
+
+	</head>
+
+	<body>
+		
+		<div id="wrapper">
+			<!-- banner -->
+			<div class="banner">
+				<div class="list_con">
+					<ul>
+						<li><img src="http://placehold.it/300x180/ff00ff/000000&text=img_1" width="300" height="180"></li>
+						<li><img src="http://placehold.it/300x180/00ff00/000000&text=img_2" width="300" height="180"></li>
+						<li><img src="http://placehold.it/300x180/0000ff/ffffff&text=img_3" width="300" height="180"></li>
+						<li><img src="http://placehold.it/300x180/666666/000000&text=img_4" width="300" height="180"></li>
+						<li><img src="http://placehold.it/300x180/cc99cc/000000&text=img_5" width="300" height="180"></li>
+					</ul>
+				</div>
+				<button type="button" class="btn_prev">이전</button>
+				<button type="button" class="btn_next">다음</button>
+			</div>
+			<!--// banner -->
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+            /**
+             * step 1. 레이아웃을 잡는다.
+             * 		- 이전 버튼, 다음 버튼 만들기
+             * 		- 배너 영역 만들기 (300 x 180)
+             * 			- 배너는 총 5개이다. (ul 안에 li를 5개 만듬)
+             * 			- ul의 넓이는 li를 가로로 정렬할 넓이(300 x 5 = 1500px)만큼 지정한다.
+             * 			  원하는 위치로 이동시키기 위한 속성을 지정한다. (position)
+             * 			- li를 가로로 정렬시킨다. (float)
+             * 			- 배너 크기만큼만 보여주기 위해 ul을 감싸는 div를 만들고, 300 x 180 사이즈만큼만 보이도록 css를 적용한다. (overflow)
+             *
+             *
+             *
+             * step 0. 버튼을 클릭하면 div의 left값을 변경하는 애니메이션을 적용해본다.
+             */
+		</script>
+	</body>
+</html>
